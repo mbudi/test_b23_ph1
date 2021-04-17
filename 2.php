@@ -11,7 +11,7 @@
 		<button onclick="cetak_hasil()">Urutkan</button>
 	</p>
 	<h4>Hasil Mengurutkan</h4>
-	<span id="canvas"></span>
+	<p id="canvas"></p>
 	<script>
 		function cetak_hasil(){
 			var kata = document.getElementById('i_kata').value;
@@ -25,18 +25,16 @@
 			}
 
 			for (var i = 1; i < arr_kata.length; i++) {
-		    for (var j = 0; j < i; j++) {
-	        if (arr_num[i] < arr_num[j]) {
-	          var x = arr_num[i];
-	          var y = arr_kata[i];
-
-	          arr_num[i] = arr_num[j];
-	          arr_num[j] = x;
-
-	          arr_kata[i] = arr_kata[j];
-	          arr_kata[j] = y;
-	        }
-	      }
+				for (var j = 0; j < i; j++) {
+					if (arr_num[i] < arr_num[j]) {
+						var x = arr_num[i];
+						var y = arr_kata[i];
+						arr_num[i] = arr_num[j];
+						arr_num[j] = x;
+						arr_kata[i] = arr_kata[j];
+						arr_kata[j] = y;
+					}
+				}
 			}
 
 			for (var i = 0; i < arr_kata.length; i++) {
