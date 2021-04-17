@@ -3,8 +3,8 @@
   <body style="text-align: center;">
     <h2>Fungsi Cetak Gambar</h2>
     <p style="border-top: 1px solid #000; border-bottom: 1px solid #000; padding:10px 0 10px 0">
-    <label for="i_panjang">Masukan panjang sisi</label>
-    <input type="number" name="i_panjang" id="i_panjang"><button onclick="cetak_gambar()">Cetak</button>
+      <label for="i_panjang">Masukan panjang sisi</label>
+      <input type="number" name="i_panjang" id="i_panjang"><button onclick="cetak_gambar()">Cetak</button>
     </p>
     <h4>Hasil Cetak</h4>
     <p id="canvas"></p>
