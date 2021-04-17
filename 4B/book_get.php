@@ -11,11 +11,12 @@
 	$query	= mysql_query($sql);
 	while($r = mysql_fetch_object($query)) {
 		$data[] = array(
-			'id'	=> $r->id,
-			'name'	=> $r->name_book,
-			'year'	=> $r->publication_year,
+			'id'		=> $r->id,
+			'name'		=> $r->name_book,
+			'year'		=> $r->publication_year,
 			'category'	=> $r->name_category,
-			'writer'	=> $r->name_writer
+			'writer'	=> $r->name_writer,
+			'img		=> base64_encode($r->img)
 		);
 	}
 	mysql_close();
