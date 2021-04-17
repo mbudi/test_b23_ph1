@@ -46,7 +46,7 @@
 					success 	: function(data){
 						console.log(data);
 						for (var i = 0; i < data.length; i++) {
-							html 	+='<div class="col-md-3">'
+							html 	+='<div class="col-md-3 mb-2">'
 									+ '<div class="card shadow-sm">'
 									+ '<img class="card-img-top" width="100%" height="225" src="data:image/png;base64, '+data[i].img+'" focusable="false">'
 									+ '<div class="card-body">'
