@@ -48,7 +48,7 @@
 						for (var i = 0; i < data.length; i++) {
 							html 	+='<div class="col-md-3">'
 									+ '<div class="card shadow-sm">'
-									+ '<img class="card-img-top" width="100%" height="225" src="" focusable="false">'
+									+ '<img class="card-img-top" width="100%" height="225" src="data:image/png;base64, '+data[i].img+'" focusable="false">'
 									+ '<div class="card-body">'
 									+ '<p class="card-text mb-0 text-truncate"><strong>'+data[i].name+'</strong></p>'
 									+ '<div class="d-flex justify-content-between align-items-center mb-2">'
