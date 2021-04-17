@@ -6,7 +6,7 @@
 	<p style="border-top: 1px solid #000; border-bottom: 1px solid #000; padding:10px 0 10px 0">
 		<label for="i_kata">Masukan kata-kata</label>
 		<br>
-		<textarea name="i_kata" id="i_kata" rows="4" cols="50"></textarea>
+		<textarea name="i_kata" id="i_kata" value="programm3er s1aya adal2ah" rows="4" cols="50"></textarea>
 		<br>
 		<button onclick="cetak_hasil()">Urutkan</button>
 	</p>
